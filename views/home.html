@@ -11,32 +11,38 @@
     <title>Mi primer documento en HTML</title>
 </head>
 <body>
-    <header>
-        <a href="/" class="logo"><img src="images/logo-mercado-liebre.svg" alt="Logo de Mercadoliebre"></a>
-        <div class="buscador">
-            <div class="fondo-blanco">Lugar para poner barra de búsqueda</div>
-            <i class="fas fa-search"></i>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="images/logo-mercado-liebre.svg" class="logo" alt="Logo de Mercadoliebre">
+                <!-- <i class="fas fa-search"></i> -->
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i> 
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
         </div>
-        <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav>
-            <ul>
+
+        <a href="#" class="burger-button">
+            <i class = "fa fa-bars"></i>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
                 <li><a href="">Ofertas</a></li>
                 <li><a href="">Tiendas Oficiales</a></li>
                 <li><a href="">Vender</a></li>
                 <li><a href="">Ayuda</a></li>
             </ul>
-        </nav>
-        <nav>
-            <ul>
+
+            <ul class="right-navbar">
                 <li><a href="">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                 <li><a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
-        <div class="burger"><i class = "fa fa-bars burger"></i></div>
-        <div>
+
+        <!-- <div>
             <img src="images/img-home-banner.jpg" alt="Banner_publicitario" width= 100%>
-        </div>
+        </div> -->
     </header>
     <main>
         <section class="ultima-visita">
