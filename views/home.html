@@ -12,14 +12,26 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="main-header-top-bar">
-            <img src="images/logo-mercado-liebre.svg" class="logo" alt="Logo de Mercadoliebre">
-                <!-- <i class="fas fa-search"></i> -->
+        <div class="main-header-top-tablet">
+            <div class="main-header-top-mobile">
+                <img src="images/logo-mercado-liebre.svg" class="logo" alt="Logo de Mercadoliebre">
+                    <form class="form-01-buscador" action="#" method="GET">
+                        <div class="input">
+                            <input type="text" name="buscador" id="buscador" placeholder="Buscar productos, marcas y más">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                    <!-- <div class="form" action='#' method="GET">
+                        <div class="input">Buscar productos, marcas y más
+                            <div class="submit"><i class="fa fa-search"></i></div>
+                        </div>
+                    </div> -->
+            </div>
             <h2 class="copy-header">
                 <i class="fas fa-hand-holding-usd"></i> 
                 Comprá en cuotas y sin tarjeta de crédito
             </h2>
-        </div>
+        </div> 
 
         <a href="#" class="burger-button">
             <i class = "fa fa-bars"></i>
@@ -44,7 +56,46 @@
             <img src="images/img-home-banner.jpg" alt="Banner_publicitario" width= 100%>
         </div> -->
     </header>
-    <main>
+
+    <!-- Formulario -->
+    <form action="/crear-producto" method="POST" class="create-form">
+        <div class="control-formulario">
+            <label for="">Nombre del producto:</label>
+            <input type="text" name="nombre" class="control">
+        </div>
+        <div class="control-formulario">
+            <label for="">Precio:</label>
+            <input type="text" name="precio" class="control">
+        </div>
+        <div class="control-formulario">
+            <label for="">Categoría:</label>
+            <select name="categoria" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label for="">Ciudad:</label>
+            <select name="ciudad" class="control">
+                <option value="baires">Buenos Aires</option>
+                <option value="ros">Rosario</option>
+                <option value="mdz">Mendoza</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label for="">Descripción:</label>
+            <textarea name="descripcion" class="control"></textarea>
+        </div>
+        <div class="control-formulario">
+            <label for="">Está en oferta:</label>
+            <input type="radio" name="enOferta">
+        </div>
+
+        <button type="reset" class="boton-formulario">Borrar</button>
+        <button type="submit" class="boton-formulario">Guardar</button>
+    </form>
+    <!-- <main>
         <section class="ultima-visita">
             <h3>Basado en tu última visita</h3>
             <article>
@@ -143,6 +194,6 @@
             <section>
                 <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
             </section>
-    </footer>
+    </footer> -->
 </body>
 </html>
