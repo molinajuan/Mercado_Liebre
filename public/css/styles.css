@@ -68,7 +68,24 @@ Verde: #39b54a;
 
 /* ------------------- Fin de Actividad de Formularios 29/1 ------------------- */
 
+.form-3 {
+    margin: 15px;
+}
 
+.form-3 div {
+    margin: 15px 0;
+}
+
+.form-3 label {
+    display: block;
+    padding-bottom: 3px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.form-3 input {
+    width: 100%;
+}
 
 
 .main-header-top-mobile {
