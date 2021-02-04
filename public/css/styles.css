@@ -69,7 +69,9 @@ Verde: #39b54a;
 /* ------------------- Fin de Actividad de Formularios 29/1 ------------------- */
 
 .form-3 {
-    margin: 15px;
+    margin: auto;
+    max-width: 500px;
+
 }
 
 .form-3 div {
@@ -85,6 +87,9 @@ Verde: #39b54a;
 
 .form-3 input {
     width: 100%;
+    border-style: none;
+    padding: 5px;
+    border-radius: 2px;
 }
 
 
@@ -97,7 +102,7 @@ Verde: #39b54a;
 .logo {
     width: 50%;
     padding: 0 10px;
-    max-width: 300px;
+    max-width: 230px;
 }
 
 .copy-header {
@@ -106,39 +111,46 @@ Verde: #39b54a;
     margin: 20px;
 }
 
-
-.form-01-buscador {
-    width: 50%;
-    display: none;
-    /* position: relative; */
+header div.logo,
+header .form{
+    /* width: 50%; */
 }
 
-.input {
-    /* position: absolute; */
-    background-color: #FFF;
-    border-radius: 8px 8px 8px 8px;
-    max-width: 400px;
-    right: auto;
-    top: 20px;
-}
-
-header .form-01-buscador input {
+header div.logo{
     padding: 10px;
+}
+
+header .form{
+    display: flex;
+    font-size: 11px;
+    justify-content: end;
+}
+
+header .form .input {
+    background-color: #FFF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     outline: none;
-    border-style: none;
+    max-width: 400px;
     color: #666;
+    border-style: none;
     border-radius: 8px 8px 8px 8px;
 }
 
-.form-01-buscador input button {
-    outline: none;
-    border-style: none;
+header .form .submit{
+    background-color: #FFF;
+    color: #666;
+    width: 10%;
 }
+
 
 .fa-search {
-    /* margin-left: 7px; */
+    margin-left: 7px;
     color: #666;
-    /* padding-top: 3px; */
+    padding-top: 3px;
+    outline: none;
 }
 
 header nav {
@@ -193,7 +205,7 @@ a:link, a:visited, a:active {
 }
 
 
-/* MAIN */
+/* -------------- MAIN -------------- */
 
 main {
     width: 90%;
@@ -215,6 +227,7 @@ h3 {
 
 article {
     margin: 10px;
+    background-color: #ffffff;
 }
 
 .producto {
@@ -261,22 +274,33 @@ article {
 }
 
 .descripcion {
-    padding-top: 15px;
-}
-
-.tamanio1 {
-    font-size: 24px;
-}
-
-.tamanio2 {
+    display: block;
+    margin: 10px;
     font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    /* padding-top: 15px; */
 }
 
-.tamanio3 {
-    font-size: 16px;
+
+button:hover {
+    background-color: #0022AA;
+    transition: all 450ms;
 }
 
-/* FOOTER */
+/* -------------- main del register -------------- */
+
+.form-3 button {
+    background-color: #1259c3;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px;
+    border-style: none;
+    margin-top: 3px;
+}
+
+/* -------------- FOOTER -------------- */
 
 footer {
     background-color: #fff;
@@ -325,10 +349,10 @@ footer i {
 
 
     main section article {
-        box-shadow : 0px 0px 10px rgb(100, 100, 100);
         border-radius: 15px;
         width: 45%;
     }
+
 
     /* header nav ul {
         display: inline;
@@ -379,6 +403,10 @@ footer i {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
+
+    .descripcion {
+        display: block;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -386,6 +414,24 @@ footer i {
         width: 23%;
     }
 
+    main section article .descripcion {
+        display: none;
+    }
+    
+    main section article:hover {
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    main section article:hover .descripcion {
+        display: block;
+        transition: all 450ms;
+    }
+    
+    main section article:hover .fa-truck {
+        transform: rotateZ(-90deg);
+        transition: all 450ms;
+    }
+    
     .logo {
         width: 250px;
     }
@@ -412,4 +458,5 @@ footer i {
     .main-navbar li {
         font-size: 19px;
     }
+
 }
