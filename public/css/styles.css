@@ -66,6 +66,15 @@ Verde: #39b54a;
     border-radius: 5px;
 }
 
+.perfil {
+    width: 5%;
+    display: flex;
+    justify-content: start;
+    padding-right: 5px;
+}
+
+
+
 /* ------------------- Fin de Actividad de Formularios 29/1 ------------------- */
 
 .form-3 {
@@ -97,6 +106,7 @@ Verde: #39b54a;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 75px;
 }
 
 .logo {
@@ -109,6 +119,10 @@ Verde: #39b54a;
     font-weight: 400;
     text-align: center;
     margin: 20px;
+}
+
+.copy-header br {
+    display: none;
 }
 
 header div.logo,
@@ -145,16 +159,19 @@ header .form .submit{
     width: 10%;
 }
 
+.fa-hand-holding-usd,
+.fa-id-card,
+.fa-sign-in-alt,
+.fa-shopping-basket {
+    color: #03264C;
+}
+
 
 .fa-search {
     margin-left: 7px;
     color: #666;
     padding-top: 3px;
     outline: none;
-}
-
-header nav {
-    margin-bottom: 10px;
 }
 
 .fondo-blanco {
@@ -362,19 +379,25 @@ footer i {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* flex-grow: 1; */
+        flex-grow: 1;
+        height: 75px;
     }
     
 
     .main-header-top-mobile {
         display: flex;
         justify-content: space-between;
-        flex-grow: 0.75;
+        flex-grow: 0.70;
     }
     
     .copy-header {
         max-width: 350px;
         text-align: right;
+        flex-grow: 0.30;
+    }
+
+    .copy-header br {
+        display: inline-block;
     }
     
     .burger-button {
@@ -384,6 +407,7 @@ footer i {
     .main-navbar {
         display: flex;
         justify-content: space-between;
+        margin-top: 15px;
     }
     
     .main-navbar ul {
@@ -410,10 +434,16 @@ footer i {
 }
 
 @media (min-width: 1200px) {
+
+    
     main section article {
         width: 23%;
     }
 
+    .main-header-top-tablet {
+        height: 75px;
+    }
+    
     main section article .descripcion {
         display: none;
     }
@@ -437,26 +467,46 @@ footer i {
     }
     .main-header-top-bar,
     .main-navbar {
-        max-width: 1200px;
-        margin: auto;
+        /* max-width: 1200px; */
+        /* margin: auto; */
     }
     .main-header-top-bar {
         align-items: center;
     }
-    .main-navbar {
-        margin-top: 30px;
-    }
+    
     .copy-header {
         margin: 0;
         max-width: none;
         font-size: 18px;
         font-weight: 400;
     }
+
+    .copy-header br {
+        display: none;
+    }
+
     .main-navbar li {
         margin: 0 10px;
     }
     .main-navbar li {
         font-size: 19px;
     }
+    
+    .footer-mensajes {
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    footer i:hover {
+        color: #448fff;
+    }
+
+    footer .copyright {
+        display: block;
+        text-align: start;
+        width: 90%;
+    }
 }
