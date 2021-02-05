@@ -127,37 +127,40 @@ Verde: #39b54a;
 
 header div.logo,
 header .form{
-    /* width: 50%; */
+    width: 50%;
 }
 
 header div.logo{
-    padding: 10px;
+    padding-right: 10px;
 }
 
-header .form{
+header .form {
     display: flex;
     font-size: 11px;
-    justify-content: end;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 12px;
+    border-radius: 8px 8px 8px 8px;
+    align-items: center;
+    color: #666;
+    max-width: 236px;
 }
 
-header .form .input {
-    background-color: #FFF;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    outline: none;
-    max-width: 400px;
-    color: #666;
+
+header .form input {
     border-style: none;
-    border-radius: 8px 8px 8px 8px;
+    width: 90%;
 }
 
 header .form .submit{
     background-color: #FFF;
     color: #666;
-    width: 10%;
+    width: 5%;
+    display: flex;
+    justify-content: end;
 }
+
+
 
 .fa-hand-holding-usd,
 .fa-id-card,
@@ -168,9 +171,7 @@ header .form .submit{
 
 
 .fa-search {
-    margin-left: 7px;
     color: #666;
-    padding-top: 3px;
     outline: none;
 }
 
@@ -299,22 +300,32 @@ article {
     /* padding-top: 15px; */
 }
 
+.main-login button:hover {
+    background-color: #448fff;
+}
 
-button:hover {
-    background-color: #0022AA;
-    transition: all 450ms;
+.main-login a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding-top: 10px;
 }
 
 /* -------------- main del register -------------- */
+
+.main-login {
+    padding: 20px 0;
+}
 
 .form-3 button {
     background-color: #1259c3;
     color: #ffffff;
     width: 100%;
     border-radius: 3px;
-    padding: 5px;
+    padding: 10px;
     border-style: none;
-    margin-top: 3px;
+    margin-top: 10px;
 }
 
 /* -------------- FOOTER -------------- */
