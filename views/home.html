@@ -12,17 +12,15 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="main-header-top-tablet">
-            <div class="main-header-top-mobile">
-                <img src="images/logo-mercado-liebre.svg" class="logo" alt="Logo de Mercadoliebre">
-                <div class="form" action='#' method="GET">
-                    <input type="text" name="search-bar" placeholder="Buscar productos, marcas y más">
-                    <div class="submit"><i class="fa fa-search"></i></div>
-                </div>
-            </div>
+        <div class="main-header-top-bar">
+            <a href="/" class="logo"><img src="images/logo-mercado-liebre.svg"  alt="Logo de Mercadoliebre"></a>
+            <form action="/" method="GET" class="search-form">
+                <input type="text" name="search-bar" placeholder="Buscar productos, marcas y más">
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            </form>
             <h2 class="copy-header">
                 <i class="fas fa-hand-holding-usd"></i> 
-                Comprá en cuotas <br> y sin tarjeta de crédito
+                Comprá en cuotas y sin tarjeta de crédito
             </h2>
         </div> 
 
@@ -50,44 +48,6 @@
         <img src="images/img-home-banner.jpg" alt="Banner_publicitario" width= 100%>
     </div>
     
-    <!-- Formulario -->
-    <!-- <form action="/crear-producto" method="POST" class="create-form">
-        <div class="control-formulario">
-            <label for="">Nombre del producto:</label>
-            <input type="text" name="nombre" class="control">
-        </div>
-        <div class="control-formulario">
-            <label for="">Precio:</label>
-            <input type="text" name="precio" class="control">
-        </div>
-        <div class="control-formulario">
-            <label for="">Categoría:</label>
-            <select name="categoria" class="control">
-                <option value="hogar">Hogar</option>
-                <option value="electro">Electro</option>
-                <option value="indumentaria">Indumentaria</option>
-            </select>
-        </div>
-        <div class="control-formulario">
-            <label for="">Ciudad:</label>
-            <select name="ciudad" class="control">
-                <option value="baires">Buenos Aires</option>
-                <option value="ros">Rosario</option>
-                <option value="mdz">Mendoza</option>
-            </select>
-        </div>
-        <div class="control-formulario">
-            <label for="">Descripción:</label>
-            <textarea name="descripcion" class="control"></textarea>
-        </div>
-        <div class="control-formulario">
-            <label for="">Está en oferta:</label>
-            <input type="radio" name="enOferta">
-        </div>
-
-        <button type="reset" class="boton-formulario">Borrar</button>
-        <button type="submit" class="boton-formulario">Guardar</button>
-    </form> -->
     <main>
         <section class="ultima-visita">
             <h3>Basado en tu última visita</h3>

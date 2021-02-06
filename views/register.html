@@ -12,17 +12,15 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="main-header-top-tablet">
-            <div class="main-header-top-mobile">
-                <img src="images/logo-mercado-liebre.svg" class="logo" alt="Logo de Mercadoliebre">
-                <div class="form" action='#' method="GET">
-                    <input type="text" name="search-bar" placeholder="Buscar productos, marcas y más">
-                    <div class="submit"><i class="fa fa-search"></i></div>
-                </div>
-            </div>
+        <div class="main-header-top-bar">
+            <a href="/" class="logo"><img src="images/logo-mercado-liebre.svg"  alt="Logo de Mercadoliebre"></a>
+            <form action="/" method="GET" class="search-form">
+                <input type="text" name="search-bar" placeholder="Buscar productos, marcas y más">
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            </form>
             <h2 class="copy-header">
                 <i class="fas fa-hand-holding-usd"></i> 
-                Comprá en cuotas <br> y sin tarjeta de crédito
+                Comprá en cuotas y sin tarjeta de crédito
             </h2>
         </div> 
 
@@ -45,9 +43,6 @@
             </ul>
         </nav>
 
-        <!-- <div>
-            <img src="images/img-home-banner.jpg" alt="Banner_publicitario" width= 100%>
-        </div> -->
     </header>
     <main class="main-login">
         <form class="form-3" action="/" method="GET">
@@ -67,11 +62,15 @@
                 <label for="domicilio">Domicilio:</label>
                 <input type="text" name="domicilio">
             </div>
-            <div >
+            <div class="comprar-vender">
                 <label for="comprar" class="perfil">
-                <input type="radio" name="medio-de-pago" value="comprar" id="comprar"> Comprar</label>
+                    <input type="radio" name="medio-de-pago" value="comprar" id="comprar">
+                    <p>Comprar</p>
+                </label>
                 <label for="vender" class="perfil">
-                <input type="radio" name="medio-de-pago" value="vender" id="vender"> Vender</label>
+                    <input type="radio" name="medio-de-pago" value="vender" id="vender"> 
+                    <p>Vender</p>
+                </label>
             </div>
             <div>
                 <label>Categorías de interés:</label>

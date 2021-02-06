@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* GENERAL */
+/* ------------------- GENERAL ------------------- */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -13,120 +13,51 @@ body {
     font-size: 12px;
 }
 
-/* 
-COLORES
-Amarillo: #EAC926; 
-Azul: #03264C; 
-Celeste: #1259c3; 
-Gris oscuro: #666; 
-Gris claro: #ebebeb; 
-Verde: #39b54a; 
-*/
 
-/* HEADER */
+/* ------------------- HEADER ------------------- */
 
 .main-header {
     background-color: #EAC926;
     padding: 20px;
-}
-
-/* header a img {
-    max-height: 40px;
-    margin: 10px;
-    justify-content: flex-start;
-} */
-
-/* ------------------- Actividad de Formularios 29/1 ------------------- */
-
-.create-form {
-    padding: 20px 15px;
-}
-
-.control-formulario {
-    margin-bottom: 15px;
-}
-
-.control-formulario label {
-    margin-bottom: 5px;
-    font-style: italic;
-    display: block;
-}
-
-.control {
-    width: 100%;
-    padding: 8px;
-}
-
-.boton-formulario {
-    background-color: #39b54a;
-    border: none;
-    font-size: 20px;
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.perfil {
-    width: 5%;
-    display: flex;
-    justify-content: start;
-    padding-right: 5px;
-}
-
-
-
-/* ------------------- Fin de Actividad de Formularios 29/1 ------------------- */
-
-.form-3 {
     margin: auto;
-    max-width: 500px;
-
 }
 
-.form-3 div {
-    margin: 15px 0;
+.main-header-top-bar,
+.main-navbar,
+.ultima-visita,
+.ofertas {
+    max-width: 1600px;
+    margin: auto;
 }
 
-.form-3 label {
-    display: block;
-    padding-bottom: 3px;
-    font-size: 15px;
-    font-style: italic;
-}
-
-.form-3 input {
-    width: 100%;
-    border-style: none;
-    padding: 5px;
-    border-radius: 2px;
-}
-
-
-.main-header-top-mobile {
+.main-header-top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    flex-wrap: wrap;
 }
 
 .logo {
-    width: 50%;
     padding: 0 10px;
-    max-width: 230px;
+    max-width: 200px;
+}
+
+.logo,
+.search-form {
+    display: block;
+    width: 50%;
 }
 
 .copy-header {
     font-weight: 400;
     text-align: center;
     margin: 20px;
+    width: 100%;
 }
 
-.copy-header br {
-    display: none;
-}
 
 header div.logo,
-header .form{
+header .search-form{
     width: 50%;
 }
 
@@ -134,7 +65,7 @@ header div.logo{
     padding-right: 10px;
 }
 
-header .form {
+header .search-form {
     display: flex;
     font-size: 11px;
     justify-content: space-between;
@@ -147,18 +78,20 @@ header .form {
 }
 
 
-header .form input {
+header .search-form input {
     border-style: none;
     width: 90%;
 }
 
-header .form .submit{
+header .search-form button {
     background-color: #FFF;
-    color: #666;
+    border-style: none;
     width: 5%;
     display: flex;
     justify-content: end;
 }
+
+
 
 
 
@@ -186,10 +119,6 @@ header p {
     margin-bottom: 10px;
 }
 
-a:link, a:visited, a:active {
-    /* text-decoration:none; */
-    /* color: black; */
-}
 
 .burger-button {
     background-color: #03264C;
@@ -211,7 +140,6 @@ a:link, a:visited, a:active {
     list-style: none;
     margin: 0;
     padding: 0;
-    /* text-decoration: none; */
 }
 
 .main-navbar a {
@@ -223,7 +151,7 @@ a:link, a:visited, a:active {
 }
 
 
-/* -------------- MAIN -------------- */
+/* -------------- MAIN del index -------------- */
 
 main {
     width: 90%;
@@ -297,7 +225,11 @@ article {
     font-size: 18px;
     font-weight: 300;
     color: #666;
-    /* padding-top: 15px; */
+}
+
+.main-login h2,
+.main-login p {
+    margin-bottom: 12px;
 }
 
 .main-login button:hover {
@@ -312,10 +244,52 @@ article {
     padding-top: 10px;
 }
 
-/* -------------- main del register -------------- */
+/* -------------- MAIN del register -------------- */
 
 .main-login {
     padding: 20px 0;
+}
+
+.form-3 {
+    margin: auto;
+    max-width: 500px;
+}
+
+.form-3 div {
+    margin: 15px 0;
+}
+
+.form-3 label {
+    display: flex;
+    padding-bottom: 3px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+.form-3 input {
+    width: 100%;
+    border-style: none;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.comprar-vender {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+
+.perfil {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-right: 5px;
+}
+.comprar-vender input {
+    width: 5%;
 }
 
 .form-3 button {
@@ -328,7 +302,7 @@ article {
     margin-top: 10px;
 }
 
-/* -------------- FOOTER -------------- */
+/* ------------------- FOOTER ------------------- */
 
 footer {
     background-color: #fff;
@@ -350,7 +324,7 @@ footer i {
     color: #1259c3;
 }
 
-/* MEDIA QUERIES*/
+/* ------------------- MEDIA QUERIES ------------------- */
 
 @media (min-width: 361px) {
     .ultima-visita,
@@ -375,40 +349,20 @@ footer i {
 
 @media (min-width: 768px) {
 
-
     main section article {
         border-radius: 15px;
         width: 45%;
     }
-
-
-    /* header nav ul {
-        display: inline;
-    } */
-
-    .main-header-top-tablet {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-grow: 1;
-        height: 75px;
-    }
     
-
-    .main-header-top-mobile {
-        display: flex;
-        justify-content: space-between;
-        flex-grow: 0.70;
+    .logo,
+    .search-form {
+        width: 100%;
     }
-    
+
     .copy-header {
-        max-width: 350px;
+        max-width: 200px;
         text-align: right;
-        flex-grow: 0.30;
-    }
-
-    .copy-header br {
-        display: inline-block;
+        margin: 0;
     }
     
     .burger-button {
@@ -446,13 +400,8 @@ footer i {
 
 @media (min-width: 1200px) {
 
-    
     main section article {
         width: 23%;
-    }
-
-    .main-header-top-tablet {
-        height: 75px;
     }
     
     main section article .descripcion {
@@ -473,27 +422,14 @@ footer i {
         transition: all 450ms;
     }
     
-    .logo {
-        width: 250px;
-    }
-    .main-header-top-bar,
-    .main-navbar {
-        /* max-width: 1200px; */
-        /* margin: auto; */
-    }
     .main-header-top-bar {
         align-items: center;
     }
     
     .copy-header {
         margin: 0;
-        max-width: none;
         font-size: 18px;
         font-weight: 400;
-    }
-
-    .copy-header br {
-        display: none;
     }
 
     .main-navbar li {
